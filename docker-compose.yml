@@ -29,4 +29,4 @@ services:
   node-app:
     build: .
     ports:
-      - '9999:8080'
+      - '9999:9999'

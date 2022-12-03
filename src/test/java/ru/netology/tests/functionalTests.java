@@ -35,7 +35,6 @@ public class functionalTests {
         open("http://localhost:8080");
     }
 
-    @SneakyThrows
     @Test
     void shouldPaymentWithApprovedCard() {
         var mainPage = new MainPage();
