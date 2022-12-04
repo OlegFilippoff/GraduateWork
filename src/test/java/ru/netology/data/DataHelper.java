@@ -100,20 +100,20 @@ public class DataHelper {
     }
 
     public static String getHolderNamePlusDigits() {
-        return faker.name() + faker.numerify(" ###");
+        return faker.name().firstName() + faker.numerify(" ###");
     }
 
     public static String getHolderNamePlusSymbols() {
-        return faker.name() + faker.internet().password();
+        return faker.name().name() + "!@#$%^";
     }
 
     public static String getInvalidHolderName() {
-        Faker faker1 = new Faker(new Locale("CN"));
-        return faker1.name().name();
+
+        return "你好!";
     }
 
     public static String getOneLetterName() {
-        return faker.letterify("#");
+        return faker.letterify("?");
     }
 
     public static String getLongName() {

@@ -15,7 +15,7 @@ public class PaymentPage {
     private final SelenideElement failureNotification = $(byText("Ошибка! Банк отказал в проведении операции."));
     private final SelenideElement successNotification = $(byText("Операция одобрена Банком."));
     private SelenideElement headingPayment = $$("h3.heading").find(exactText("Оплата по карте"));
-    private SelenideElement cardNumberInput = $("input[placeholder='0000 0000 0000 0000]");
+    private SelenideElement cardNumberInput = $("input[placeholder='0000 0000 0000 0000']");
     private SelenideElement monthInput = $("input[placeholder='08']");
     private SelenideElement yearInput = $("input[placeholder='22']");
     private SelenideElement cvcInput = $("input[placeholder='999']");
@@ -41,7 +41,7 @@ public class PaymentPage {
     }
 
     public void invalidPaymentDebitCard() {
-        $(".notification_status_error")
+        $(".notification_status_error .notification__content")
                 .shouldHave(text("Ошибка! Банк отказал в проведении операции."), Duration.ofSeconds(20)).shouldBe(visible);
     }
 
@@ -75,7 +75,7 @@ public class PaymentPage {
     }
 
     public void checkAllFieldsAreRequired() {
-        $$(".input__sub").shouldHave(CollectionCondition.size(5))
-                .shouldHave(CollectionCondition.texts("Поле обязательно для заполнения"));
+        $$(".input__sub").shouldHave(CollectionCondition.size(5));
+
     }
 }
