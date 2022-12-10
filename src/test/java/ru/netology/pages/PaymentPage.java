@@ -46,32 +46,32 @@ public class PaymentPage {
     }
 
     public void checkInvalidFormat() {
-        $(".input__sub").shouldBe(visible).shouldHave(text("Неверный формат"),Duration.ofSeconds(15));
+        $(".input__sub").shouldBe(visible).shouldHave(text("Неверный формат"), Duration.ofSeconds(15));
     }
 
     public void checkInvalidCardValidityPeriod() {
         $(".input__sub").shouldBe(visible)
-                .shouldHave(text("Неверно указан срок действия карты"),Duration.ofSeconds(15));
+                .shouldHave(text("Неверно указан срок действия карты"), Duration.ofSeconds(15));
     }
 
-    public void checkCardExpired () {
+    public void checkCardExpired() {
         $(".input__sub").shouldBe(visible)
-                .shouldHave(text("Истёк срок действия карты"),Duration.ofSeconds(15));
+                .shouldHave(text("Истёк срок действия карты"), Duration.ofSeconds(15));
     }
 
     public void checkInvalidOwner() {
         $(".input__sub").shouldBe(visible)
-                .shouldHave(text("Введите имя и фамилию, указанные на карте"),Duration.ofSeconds(15));
+                .shouldHave(text("Введите имя и фамилию, указанные на карте"), Duration.ofSeconds(15));
     }
 
     public void checkEmptyField() {
         $(".input__sub").shouldBe(visible)
-                .shouldHave(text("Поле обязательно для заполнения"),Duration.ofSeconds(15));
+                .shouldHave(text("Поле обязательно для заполнения"), Duration.ofSeconds(15));
     }
 
     public void incorrectOwner() {
         $(".input__sub").shouldBe(visible)
-                .shouldHave(text("Значение поля может содержать только латинские буквы и дефис"),Duration.ofSeconds(15));
+                .shouldHave(text("Значение поля может содержать только латинские буквы и дефис"), Duration.ofSeconds(15));
     }
 
     public void checkAllFieldsAreRequired() {

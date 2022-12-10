@@ -20,7 +20,7 @@ public class DataBase {
         String deleteOrder = "DELETE FROM order_entity";
         String deletePayment = "DELETE FROM payment_entity";
 
-        try  (
+        try (
                 Connection connection = DriverManager.getConnection(
                         url, user, password)
 
