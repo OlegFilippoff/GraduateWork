@@ -36,7 +36,7 @@ public class CreditCardTests {
     void shouldMakePaymentWithApprovedCard() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                getFirstCard(), getValidMonth(0), plusYears(5), getValidHolderName(), getValidCVC());
+                getFirstCard(), getValidMonth(1), plusYears(4), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.successfulPaymentCreditCard();
@@ -69,7 +69,7 @@ public class CreditCardTests {
     }
 
     @Test
-    void shouldPaymentWithDeclinedCardExpired() {
+    void shouldIgnorePaymentWithDeclinedCardExpired() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
                 getSecondCard(), getCurrentMonth(), getCurrentYear(), getValidHolderName(), getValidCVC());
@@ -191,7 +191,7 @@ public class CreditCardTests {
     }
 
     @Test
-    void shouldPaymentInvalidOwnerCardWithNumbers() {
+    void shouldIgnorePaymentInvalidHolderNameWithNumbers() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
                 getFirstCard(), getValidMonth(4), plusYears(3),
@@ -202,7 +202,7 @@ public class CreditCardTests {
     }
 
     @Test
-    void shouldPaymentInvalidOwnerCardOneLetterName() {
+    void shouldIgnorePaymentInvalidOneLetterName() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
                 getFirstCard(), getValidMonth(9), plusYears(3),
@@ -213,7 +213,7 @@ public class CreditCardTests {
     }
 
     @Test
-    void shouldPaymentInvalidOwnerCardWithSymbols() {
+    void shouldIgnorePaymentInvalidHolderNameWithSymbols() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
                 getFirstCard(), getValidMonth(1), plusYears(1),
@@ -234,7 +234,7 @@ public class CreditCardTests {
     }
 
     @Test
-    void shouldPaymentCardInvalidZeroMonth() {
+    void shouldIgnoreInvalidZeroMonth() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
                 getFirstCard(), getZeroMonth(), plusYears(4), getValidHolderName(), getValidCVC());
