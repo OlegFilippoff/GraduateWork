@@ -15,3 +15,6 @@
 1. Повторить пункты 1-3 последовательно
 2. Открыть новое окно терминала и Запустить приложение на сервере Postgres командой java -jar ./aqa.jar -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app
 3. Открыть новое окно терминала и Запустить тесты командой ./gradlew clean test
+
+### Отчеты Allure
+Написать в командной стреке ./gradlew allureReport для создания отчетности Allure
