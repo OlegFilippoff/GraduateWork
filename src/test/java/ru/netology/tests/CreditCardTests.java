@@ -17,7 +17,7 @@ import static ru.netology.data.DataHelper.*;
 public class CreditCardTests {
     @BeforeAll
     static void setUpAll() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 
     @AfterAll

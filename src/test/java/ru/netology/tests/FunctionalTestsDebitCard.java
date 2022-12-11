@@ -19,7 +19,7 @@ public class FunctionalTestsDebitCard {
 
     @BeforeAll
     static void setUpAll() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        SelenideLogger.addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 
     @SneakyThrows

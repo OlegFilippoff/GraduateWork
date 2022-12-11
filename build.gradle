@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "io.freefair.lombok" version "5.3.0"
+    id 'io.qameta.allure' version '2.9.6'
 }
 
 group 'org.example'
@@ -8,25 +9,33 @@ version '1.0-SNAPSHOT'
 
 
 sourceCompatibility = 11
-
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-repositories {
-    mavenCentral()
+allure {
+    version = '2.20.1'
 }
 
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.clojars.org'
+        name 'Clojars'
+    }
+
+}
+
+
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-    implementation 'org.projectlombok:lombok:1.18.22'
-    testImplementation 'com.codeborne:selenide:6.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    testImplementation 'com.codeborne:selenide:6.10.1'
     testImplementation 'mysql:mysql-connector-java:8.0.31'
-    testImplementation 'postgresql:postgresql:9.1-901-1.jdbc4'
+    testImplementation 'postgresql:postgresql:9.3-1102.jdbc41'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'io.rest-assured:rest-assured:5.3.0'
     testImplementation 'com.google.code.gson:gson:2.10'
-    testImplementation 'io.qameta.allure:allure-selenide:2.20.0'
+    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
 
 }
