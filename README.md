@@ -1,6 +1,8 @@
 # GraduateWork
 [![Build status](https://ci.appveyor.com/api/projects/status/wcdaa281l8ugbj3t?svg=true)](https://ci.appveyor.com/project/OlegFilippoff/graduatework)
 
+[План выполнения работ](https://github.com/OlegFilippoff/GraduateWork/blob/master/Docs/Plan.md)
+
 ### Руководство
 
 1. Скопировать содержимое репозитория https://github.com/OlegFilippoff/GraduateWork
