@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - CreditCardTests</title>
+<title>Test results - FunctionalTestsDebitCard</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>CreditCardTests</h1>
+<h1>FunctionalTestsDebitCard</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/ru.netology.tests.html">ru.netology.tests</a> &gt; CreditCardTests</div>
+<a href="../packages/ru.netology.tests.html">ru.netology.tests</a> &gt; FunctionalTestsDebitCard</div>
 <div id="summary">
 <table>
 <tr>
@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">9</div>
+<div class="counter">8</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m24.06s</div>
+<div class="counter">1m35.70s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">65%</div>
+<div class="percent">69%</div>
 <p>successful</p>
 </div>
 </td>
@@ -66,9 +66,6 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
-<li>
-<a href="#tab2">Standard error</a>
-</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
@@ -78,8 +75,8 @@
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750951991.1.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750951991.1.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751082226.9.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751082226.9.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -92,8 +89,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.checkInvalidHolder(CreditPage.java:63)
-	at app//ru.netology.tests.CreditCardTests.shouldCheckInvalidLongName(CreditCardTests.java:190)
+	at app//ru.netology.pages.PaymentPage.checkInvalidOwner(PaymentPage.java:63)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldCheckInvalidLongName(FunctionalTestsDebitCard.java:194)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -215,8 +212,8 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750979233.3.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750979233.3.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751098517.12.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751098517.12.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -229,8 +226,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.checkInvalidHolder(CreditPage.java:63)
-	at app//ru.netology.tests.CreditCardTests.shouldCheckNameInChinese(CreditCardTests.java:180)
+	at app//ru.netology.pages.PaymentPage.checkInvalidOwner(PaymentPage.java:63)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldCheckNameInChinese(FunctionalTestsDebitCard.java:184)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -347,13 +344,13 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnoreInvalidZeroMonth()"></a>
-<h3 class="failures">shouldIgnoreInvalidZeroMonth()</h3>
+<a name="shouldPaymentCardInvalidZeroMonth()"></a>
+<h3 class="failures">shouldPaymentCardInvalidZeroMonth()</h3>
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751029726.6.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751029726.6.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751154826.15.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751154826.15.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -366,8 +363,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.checkInvalidCardValidityPeriod(CreditPage.java:53)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnoreInvalidZeroMonth(CreditCardTests.java:243)
+	at app//ru.netology.pages.PaymentPage.checkInvalidCardValidityPeriod(PaymentPage.java:53)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldPaymentCardInvalidZeroMonth(FunctionalTestsDebitCard.java:247)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -484,13 +481,13 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnorePaymentInvalidHolderNameWithNumbers()"></a>
-<h3 class="failures">shouldIgnorePaymentInvalidHolderNameWithNumbers()</h3>
+<a name="shouldPaymentInvalidOwnerCardOneLetterName()"></a>
+<h3 class="failures">shouldPaymentInvalidOwnerCardOneLetterName()</h3>
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751056940.7.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751056940.7.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751138542.14.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751138542.14.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -503,8 +500,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.incorrectHolder(CreditPage.java:73)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentInvalidHolderNameWithNumbers(CreditCardTests.java:201)
+	at app//ru.netology.pages.PaymentPage.incorrectOwner(PaymentPage.java:73)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldPaymentInvalidOwnerCardOneLetterName(FunctionalTestsDebitCard.java:216)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -621,13 +618,13 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnorePaymentInvalidHolderNameWithSymbols()"></a>
-<h3 class="failures">shouldIgnorePaymentInvalidHolderNameWithSymbols()</h3>
+<a name="shouldPaymentInvalidOwnerCardWithNumbers()"></a>
+<h3 class="failures">shouldPaymentInvalidOwnerCardWithNumbers()</h3>
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751063871.8.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751063871.8.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751087673.10.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751087673.10.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -640,8 +637,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.incorrectHolder(CreditPage.java:73)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentInvalidHolderNameWithSymbols(CreditCardTests.java:223)
+	at app//ru.netology.pages.PaymentPage.incorrectOwner(PaymentPage.java:73)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldPaymentInvalidOwnerCardWithNumbers(FunctionalTestsDebitCard.java:205)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -758,13 +755,13 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnorePaymentInvalidOneLetterName()"></a>
-<h3 class="failures">shouldIgnorePaymentInvalidOneLetterName()</h3>
+<a name="shouldPaymentInvalidOwnerCardWithSymbols()"></a>
+<h3 class="failures">shouldPaymentInvalidOwnerCardWithSymbols()</h3>
 <span class="code">
 <pre>Element not found {.input__sub}
 Expected: visible
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750944742.0.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750944742.0.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751093126.11.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751093126.11.html
 Timeout: 4 s.
 Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.input__sub&quot;}
 	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:87)
@@ -777,8 +774,8 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldBe(Unknown Source)
-	at app//ru.netology.pages.CreditPage.incorrectHolder(CreditPage.java:73)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentInvalidOneLetterName(CreditCardTests.java:212)
+	at app//ru.netology.pages.PaymentPage.incorrectOwner(PaymentPage.java:73)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldPaymentInvalidOwnerCardWithSymbols(FunctionalTestsDebitCard.java:227)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -895,14 +892,14 @@ Session ID: bbcec9bd021bd134defd1851490f13ae
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnorePaymentWithDeclinedCard()"></a>
-<h3 class="failures">shouldIgnorePaymentWithDeclinedCard()</h3>
+<a name="shouldPaymentWithDeclinedCard()"></a>
+<h3 class="failures">shouldPaymentWithDeclinedCard()</h3>
 <span class="code">
 <pre>Element should have text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification_status_error .notification__content}
 Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
 Actual value: text=&quot;&quot;
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751000795.4.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751000795.4.html
+Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751120126.13.png
+Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751120126.13.html
 Timeout: 20 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:135)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:98)
@@ -912,8 +909,8 @@ Timeout: 20 s.
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
 	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
 	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
-	at app//ru.netology.pages.CreditPage.invalidPaymentCreditCard(CreditPage.java:45)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentWithDeclinedCard(CreditCardTests.java:66)
+	at app//ru.netology.pages.PaymentPage.invalidPaymentDebitCard(PaymentPage.java:45)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldPaymentWithDeclinedCard(FunctionalTestsDebitCard.java:69)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1001,131 +998,16 @@ Timeout: 20 s.
 </span>
 </div>
 <div class="test">
-<a name="shouldIgnorePaymentWithDeclinedCardExpired()"></a>
-<h3 class="failures">shouldIgnorePaymentWithDeclinedCardExpired()</h3>
+<a name="shouldRefuseDeclinedCardExpired()"></a>
+<h3 class="failures">shouldRefuseDeclinedCardExpired()</h3>
 <span class="code">
-<pre>Element should have text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification_status_error .notification__content}
-Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
-Actual value: text=&quot;&quot;
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751022976.5.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670751022976.5.html
-Timeout: 20 s.
-	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:135)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:98)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
-	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:157)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
-	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
-	at app//ru.netology.pages.CreditPage.invalidPaymentCreditCard(CreditPage.java:45)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentWithDeclinedCardExpired(CreditCardTests.java:78)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at app//org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@11.0.13/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@11.0.13/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="shouldIgnorePaymentWithInvalidCardNumber()"></a>
-<h3 class="failures">shouldIgnorePaymentWithInvalidCardNumber()</h3>
-<span class="code">
-<pre>Element should have text &quot;Ошибка! Банк отказал в проведении операции.&quot; {.notification_status_error .notification__content}
-Element: '&lt;div class=&quot;notification__content&quot; displayed:false&gt;&lt;/div&gt;'
-Actual value: text=&quot;&quot;
-Screenshot: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750973678.2.png
-Page source: file:/D:/study/Netology/GraduateWork/build/reports/tests/1670750973678.2.html
-Timeout: 20 s.
-	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:135)
-	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:98)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
-	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
-	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:157)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
-	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
-	at app//com.sun.proxy.$Proxy18.shouldHave(Unknown Source)
-	at app//ru.netology.pages.CreditPage.invalidPaymentCreditCard(CreditPage.java:45)
-	at app//ru.netology.tests.CreditCardTests.shouldIgnorePaymentWithInvalidCardNumber(CreditCardTests.java:90)
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;DECLINED&gt; but was: &lt;APPROVED&gt;
+	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at app//ru.netology.tests.FunctionalTestsDebitCard.shouldRefuseDeclinedCardExpired(FunctionalTestsDebitCard.java:83)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1224,151 +1106,136 @@ Timeout: 20 s.
 </tr>
 </thead>
 <tr>
-<td class="success">shouldCheckCardInvalidMonthInvalidPeriod()</td>
-<td class="success">1.255s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckCardInvalidYearOneDigit()</td>
-<td class="success">1.604s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckInvalidCardOneDigit()</td>
-<td class="success">1.191s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckInvalidCardZero()</td>
-<td class="success">1.189s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckInvalidFullZeroCard()</td>
-<td class="success">6.852s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">shouldCheckInvalidLongName()</td>
-<td class="failures">5.612s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldCheckNameInChinese()</td>
-<td class="failures">5.560s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckPaymentIncorrectCardExpired()</td>
-<td class="success">1.239s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckPaymentWithApprovedCardExpired()</td>
-<td class="success">11.283s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldCheckPaymentWithExpiredCard()</td>
-<td class="success">1.272s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnoreInvalidZeroMonth()</td>
-<td class="failures">5.473s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentInvalidHolderNameWithNumbers()</td>
-<td class="failures">5.464s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentInvalidHolderNameWithSymbols()</td>
-<td class="failures">5.628s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentInvalidOneLetterName()</td>
-<td class="failures">13.342s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentWithDeclinedCard()</td>
-<td class="failures">21.531s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentWithDeclinedCardExpired()</td>
-<td class="failures">21.370s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="failures">shouldIgnorePaymentWithInvalidCardNumber()</td>
-<td class="failures">21.646s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">shouldMakePaymentWithApprovedCard()</td>
-<td class="success">3.304s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldPaymentCardValidMoreThanFiveYears()</td>
+<td class="success">shouldCheckApprovedCardExpired()</td>
 <td class="success">1.285s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">shouldCheckCardInvalidMonthInvalidPeriod()</td>
+<td class="success">1.248s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckCardInvalidYearOneDigit()</td>
+<td class="success">1.210s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckInvalidCardOneDigit()</td>
+<td class="success">1.221s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckInvalidCardZero()</td>
+<td class="success">1.172s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckInvalidFullZeroCard()</td>
+<td class="success">3.122s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">shouldCheckInvalidLongName()</td>
+<td class="failures">5.480s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">shouldCheckNameInChinese()</td>
+<td class="failures">5.400s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckPaymentIncorrectCardExpired()</td>
+<td class="success">1.226s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldCheckPaymentWithExpiredCard()</td>
+<td class="success">1.216s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">shouldPaymentCardInvalidZeroMonth()</td>
+<td class="failures">5.422s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">shouldPaymentCardValidMoreThanFiveYears()</td>
+<td class="success">1.245s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">shouldPaymentEmptyAllField()</td>
-<td class="success">0.820s</td>
+<td class="success">0.784s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentEmptyFieldCvc()</td>
-<td class="success">1.183s</td>
+<td class="success">1.186s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentEmptyFieldMonth()</td>
-<td class="success">1.206s</td>
+<td class="success">1.185s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentEmptyFieldNumberCard()</td>
-<td class="success">1.112s</td>
+<td class="success">1.090s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentEmptyFieldOwner()</td>
-<td class="success">1.145s</td>
+<td class="success">1.162s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentEmptyFieldYears()</td>
-<td class="success">1.175s</td>
+<td class="success">1.172s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">shouldPaymentInvalidOwnerCardOneLetterName()</td>
+<td class="failures">5.667s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">shouldPaymentInvalidOwnerCardWithNumbers()</td>
+<td class="failures">5.423s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">shouldPaymentInvalidOwnerCardWithSymbols()</td>
+<td class="failures">5.465s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">shouldPaymentWithApprovedCard()</td>
+<td class="success">8.480s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">shouldPaymentWithDeclinedCard()</td>
+<td class="failures">21.562s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">shouldPaymentWithInvalidCardNumber()</td>
+<td class="success">10.781s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldPaymentWithInvalidCardNumberShort()</td>
-<td class="success">1.319s</td>
+<td class="success">1.200s</td>
 <td class="success">passed</td>
 </tr>
+<tr>
+<td class="failures">shouldRefuseDeclinedCardExpired()</td>
+<td class="failures">1.298s</td>
+<td class="failures">failed</td>
+</tr>
 </table>
-</div>
-<div id="tab2" class="tab">
-<h2>Standard error</h2>
-<span class="code">
-<pre>SLF4J: No SLF4J providers were found.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 5358
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-дек. 11, 2022 12:28:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 108, so returning the closest version found: 107
-</pre>
-</span>
 </div>
 </div>
 <div id="footer">
