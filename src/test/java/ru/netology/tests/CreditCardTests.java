@@ -40,7 +40,7 @@ public class CreditCardTests {
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.successfulPaymentCreditCard();
-        String actual = DataBase.getStatusPayment();
+        String actual = DataBase.getStatusCredit();
         assertEquals("APPROVED", actual);
     }
 
