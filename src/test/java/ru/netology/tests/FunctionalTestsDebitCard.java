@@ -1,5 +1,6 @@
 package ru.netology.tests;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import lombok.SneakyThrows;
@@ -31,7 +32,7 @@ public class FunctionalTestsDebitCard {
 
     @BeforeEach
     public void setUp() {
-        // Configuration.headless = true;
+        Configuration.headless = true;
         open("http://localhost:8080");
     }
 

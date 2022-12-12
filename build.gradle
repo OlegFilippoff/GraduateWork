@@ -31,12 +31,15 @@ dependencies {
     implementation 'org.projectlombok:lombok:1.18.24'
     testImplementation 'com.codeborne:selenide:6.10.1'
     testImplementation 'mysql:mysql-connector-java:8.0.31'
-    testImplementation 'postgresql:postgresql:9.3-1102.jdbc41'
+    testImplementation 'postgresql:postgresql:9.3-1102.jdbc4'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'io.rest-assured:rest-assured:5.3.0'
     testImplementation 'com.google.code.gson:gson:2.10'
     testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
+    testImplementation 'io.qameta.allure:allure-java-commons:2.20.1'
+    testImplementation 'io.qameta.allure:allure-junit5:2.20.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    runtimeOnly 'org.aspectj:aspectjweaver:1.9.9.1'
 
 }
 

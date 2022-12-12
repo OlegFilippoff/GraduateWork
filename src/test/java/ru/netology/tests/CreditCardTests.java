@@ -3,7 +3,6 @@ package ru.netology.tests;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.netology.data.CardInfo;
@@ -15,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.netology.data.DataHelper.*;
 
 public class CreditCardTests {
-    @BeforeAll
-    static void setUpAll() {
+    @BeforeEach
+    void setUpAll() {
         SelenideLogger.addListener("allure", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 
@@ -28,7 +27,7 @@ public class CreditCardTests {
 
     @BeforeEach
     public void setUp() {
-        // Configuration.headless = true;
+        //Configuration.headless = true;
         open("http://localhost:8080");
     }
 
