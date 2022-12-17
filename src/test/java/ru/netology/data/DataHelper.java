@@ -36,11 +36,11 @@ public class DataHelper {
     }
 
     public static String invalidCard() {
-        return faker.numerify("#### #### #### ####");
+        return faker.number().digits(16);
     }
 
     public static String invalidCardOneMinus() {
-        return faker.numerify("#### #### #### ###");
+        return faker.number().digits(15);
     }
 
     public static String invalidCardZero() {
