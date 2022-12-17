@@ -3,6 +3,8 @@
 
 [План выполнения работ](https://github.com/OlegFilippoff/GraduateWork/blob/master/Docs/Plan.md)
 
+[Отчет Allure](https://github.com/OlegFilippoff/GraduateWork/blob/master/Docs/Report.md)
+
 ### Руководство
 
 1. Скопировать содержимое репозитория https://github.com/OlegFilippoff/GraduateWork
