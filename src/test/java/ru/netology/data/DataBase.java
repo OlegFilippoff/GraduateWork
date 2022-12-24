@@ -27,13 +27,12 @@ public class DataBase {
     }
 
     @SneakyThrows
-    public static String getStatus(String status) {
+    public static String getStatus(String statusSQL) {
         QueryRunner runner = new QueryRunner();
         Connection connection = DriverManager.getConnection(
                 url, user, password);
-        String result = runner.query(connection, status, new ScalarHandler<>());
+        String result = runner.query(connection, statusSQL, new ScalarHandler<>());
         return result;
-
     }
 
     @SneakyThrows
@@ -47,4 +46,5 @@ public class DataBase {
         String statusSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1";
         return getStatus(statusSQL);
     }
+    
 }

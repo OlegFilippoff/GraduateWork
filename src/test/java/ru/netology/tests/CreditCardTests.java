@@ -12,6 +12,7 @@ import ru.netology.pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static ru.netology.data.DataBase.getCreditPaymentStatus;
 import static ru.netology.data.DataHelper.*;
 
 public class CreditCardTests {
@@ -66,7 +67,7 @@ public class CreditCardTests {
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.invalidPaymentCreditCard();
-        String actual = DataBase.getStatusCredit();
+        String actual = getCreditPaymentStatus();
         assertEquals("DECLINED", actual);
     }
 
