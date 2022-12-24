@@ -6,10 +6,10 @@
 - По завершении последнего этапа был сформирован отчет Allure о тестировании и оформлены баг репорты.
 
 ## Результаты прогона тестов
-- Всего тестовых кейсов описано 52
-- успешных тестовых кейсов 36
-- тесты завершились с ошибками 16
-- 69% тестов завершилось успешно
+- Всего тестовых кейсов описано 54
+- успешных тестовых кейсов 37
+- тесты завершились с ошибками 17
+- 68.51% тестов завершилось успешно
 
 ## Рекомендации 
 
@@ -18,10 +18,17 @@
 - Для улучшения тестопригодности следует написать уникальные селекторы
 
 ### Отчетность Allure
-![img.png](img.png)
+![image](https://user-images.githubusercontent.com/94902304/209438142-f731de41-b689-4ef6-914c-adcfa8a200b5.png)
 
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/94902304/209438170-f10e71a3-bb86-41e4-9c2f-04d4282d0f74.png)
 
-![img_2.png](img_2.png)
+![image](https://user-images.githubusercontent.com/94902304/209438191-8567aca9-64a6-4f58-a673-38d52a337e38.png)
 
-![img_3.png](img_3.png)
+![image](https://user-images.githubusercontent.com/94902304/209438197-5581575d-b7c6-4f01-8799-b302edc7bda7.png)
+
+![image](https://user-images.githubusercontent.com/94902304/209438205-00fe3dee-708b-4a7a-8cff-f26e0830aa27.png)
+
+![image](https://user-images.githubusercontent.com/94902304/209438214-0d5cb805-e506-435a-8d00-870403523ebc.png)
+
+![image](https://user-images.githubusercontent.com/94902304/209438219-574628c9-d371-4a11-855c-521c75bb5683.png)
+
