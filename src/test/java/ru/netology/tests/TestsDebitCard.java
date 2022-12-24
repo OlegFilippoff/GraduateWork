@@ -90,7 +90,7 @@ public class TestsDebitCard {
     void shouldPaymentWithInvalidCardNumber() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                invalidCard(), getValidMonth(2), plusYears(3), getValidHolderName(), getValidCVC());
+                invalidCard(14), getValidMonth(2), plusYears(3), getValidHolderName(), getValidCVC());
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
         paymentPage.invalidPaymentDebitCard();

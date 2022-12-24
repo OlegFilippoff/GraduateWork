@@ -20,30 +20,20 @@ public class DataBase {
         String deleteOrder = "DELETE FROM order_entity";
         String deletePayment = "DELETE FROM payment_entity";
 
-        try (
-                Connection connection = DriverManager.getConnection(
-                        url, user, password)
-
-        ) {
-            runner.update(connection, deleteCredit);
-            runner.update(connection, deleteOrder);
-            runner.update(connection, deletePayment);
-        }
-
+        Connection connection = DriverManager.getConnection(url, user, password);
+        runner.update(connection, deleteCredit);
+        runner.update(connection, deleteOrder);
+        runner.update(connection, deletePayment);
     }
 
     @SneakyThrows
     public static String getStatus(String status) {
         QueryRunner runner = new QueryRunner();
+        Connection connection = DriverManager.getConnection(
+                url, user, password);
+        String result = runner.query(connection, status, new ScalarHandler<>());
+        return result;
 
-        try (
-                Connection connection = DriverManager.getConnection(
-                        url, user, password)
-
-        ) {
-            String result = runner.query(connection, status, new ScalarHandler<>());
-            return result;
-        }
     }
 
     @SneakyThrows

@@ -86,7 +86,7 @@ public class CreditCardTests {
     void shouldIgnorePaymentWithInvalidCardNumber() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                invalidCard(), getValidMonth(2), plusYears(1), getValidHolderName(), getValidCVC());
+                invalidCard(14), getValidMonth(2), plusYears(1), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.invalidPaymentCreditCard();

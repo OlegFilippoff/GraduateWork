@@ -35,12 +35,16 @@ public class DataHelper {
         return "4444 4444 4444 4442";
     }
 
-    public static String invalidCard() {
-        return faker.number().digits(16);
+    public static String getRandomNumbers(int number) {
+        return faker.number().digits(number);
+    }
+
+    public static String invalidCard(int numbers) {
+        return getRandomNumbers(numbers);
     }
 
     public static String invalidCardOneMinus() {
-        return faker.number().digits(15);
+        return getRandomNumbers(16);
     }
 
     public static String invalidCardZero() {
@@ -52,7 +56,7 @@ public class DataHelper {
     }
 
     public static String invalidCardOneDigit() {
-        return faker.numerify("#");
+        return getRandomNumbers(1);
     }
 
     public static String getValidMonth(int plusMonth) {
@@ -66,12 +70,11 @@ public class DataHelper {
 
     public static String getInvalidMonth() {
         int month = parseInt(getCurrentMonth());
-        month = month + parseInt(faker.numerify("2#"));
-        return String.valueOf(month);
+        return "2" + month;
     }
 
     public static String getInvalidYear() {
-        int years = faker.number().randomDigit();
+        int years = Integer.parseInt(getRandomNumbers(1));
         if (years == 0) {
             years = years + 1;
         }
@@ -88,11 +91,11 @@ public class DataHelper {
     }
 
     public static String oneDigitYear() {
-        return faker.numerify("#");
+        return getRandomNumbers(1);
     }
 
     public static String treeDigitYear() {
-        return faker.numerify("###");
+        return getRandomNumbers(3);
     }
 
     public static String getValidHolderName() {
@@ -100,7 +103,7 @@ public class DataHelper {
     }
 
     public static String getHolderNamePlusDigits() {
-        return faker.name().firstName() + faker.numerify(" ###");
+        return faker.name().firstName() + getRandomNumbers(5);
     }
 
     public static String getHolderNamePlusSymbols() {
@@ -121,7 +124,7 @@ public class DataHelper {
     }
 
     public static String getValidCVC() {
-        return faker.numerify("###");
+        return getRandomNumbers(3);
     }
 
 }
