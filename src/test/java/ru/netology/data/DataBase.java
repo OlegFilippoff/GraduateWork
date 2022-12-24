@@ -37,14 +37,14 @@ public class DataBase {
 
     @SneakyThrows
     public static String getStatusPayment() {
-        String statusSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
+        String statusSQL = "SELECT status FROM payment_entity cre ORDER BY created DESC LIMIT 1";
         return getStatus(statusSQL);
     }
 
     @SneakyThrows
     public static String getStatusCredit() {
-        String statusSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1";
+        String statusSQL = "SELECT status FROM credit_request_entity cre ORDER BY created DESC LIMIT 1";
         return getStatus(statusSQL);
     }
-    
+
 }

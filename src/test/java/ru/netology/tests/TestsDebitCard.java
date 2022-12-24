@@ -34,7 +34,7 @@ public class TestsDebitCard {
 
     @BeforeEach
     public void setUp() {
-        Configuration.headless = true;
+        Configuration.headless = false;
         open(url);
     }
 
@@ -69,8 +69,8 @@ public class TestsDebitCard {
                 getSecondCard(), getCurrentMonth(), plusYears(5), getValidHolderName(), getValidCVC());
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
-        paymentPage.invalidPaymentDebitCard();
         String actual = DataBase.getStatusPayment();
+        paymentPage.invalidPaymentDebitCard();
         assertEquals("DECLINED", actual);
     }
 
@@ -81,8 +81,8 @@ public class TestsDebitCard {
                 getSecondCard(), getValidMonth(1), getZeroYear(), getValidHolderName(), getValidCVC());
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
-        paymentPage.checkCardExpired();
         String actual = DataBase.getStatusPayment();
+        paymentPage.checkCardExpired();
         assertEquals("DECLINED", actual);
     }
 
@@ -90,7 +90,7 @@ public class TestsDebitCard {
     void shouldPaymentWithInvalidCardNumber() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                invalidCard(14), getValidMonth(2), plusYears(3), getValidHolderName(), getValidCVC());
+                invalidCard(16), getValidMonth(2), plusYears(3), getValidHolderName(), getValidCVC());
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
         paymentPage.invalidPaymentDebitCard();
@@ -244,10 +244,10 @@ public class TestsDebitCard {
     void shouldPaymentCardInvalidZeroMonth() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                getFirstCard(), getZeroMonth(), plusYears(4), getValidHolderName(), getValidCVC());
+                getFirstCard(), getZeroMonth(), plusYears(2), getValidHolderName(), getValidCVC());
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
-        paymentPage.checkInvalidCardValidityPeriod();
+        paymentPage.checkInvalidFormat();
     }
 
     @Test
@@ -308,5 +308,15 @@ public class TestsDebitCard {
         var paymentPage = mainPage.paymentPage();
         paymentPage.getFillCardDetails(card);
         paymentPage.checkAllFieldsAreRequired();
+    }
+
+    @Test
+    void shouldCheckInvalidCVCFormat() {
+        var mainPage = new MainPage();
+        CardInfo card = new CardInfo(
+                getFirstCard(), getValidMonth(2), plusYears(3), getValidHolderName(), getInvalidCVC());
+        var paymentPage = mainPage.paymentPage();
+        paymentPage.getFillCardDetails(card);
+        paymentPage.checkInvalidFormat();
     }
 }

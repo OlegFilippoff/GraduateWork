@@ -44,7 +44,7 @@ public class DataHelper {
     }
 
     public static String invalidCardOneMinus() {
-        return getRandomNumbers(16);
+        return getRandomNumbers(15);
     }
 
     public static String invalidCardZero() {
@@ -125,6 +125,10 @@ public class DataHelper {
 
     public static String getValidCVC() {
         return getRandomNumbers(3);
+    }
+
+    public static String getInvalidCVC() {
+        return getRandomNumbers(2);
     }
 
 }

@@ -12,7 +12,6 @@ import ru.netology.pages.MainPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static ru.netology.data.DataBase.getCreditPaymentStatus;
 import static ru.netology.data.DataHelper.*;
 
 public class CreditCardTests {
@@ -31,7 +30,7 @@ public class CreditCardTests {
 
     @BeforeEach
     public void setUp() {
-        Configuration.headless = true;
+        Configuration.headless = false;
         open(url);
     }
 
@@ -54,8 +53,8 @@ public class CreditCardTests {
                 getFirstCard(), getCurrentMonth(), getCurrentYear(), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
-        creditPage.successfulPaymentCreditCard();
         String actual = DataBase.getStatusCredit();
+        creditPage.successfulPaymentCreditCard();
         assertEquals("APPROVED", actual);
     }
 
@@ -66,8 +65,8 @@ public class CreditCardTests {
                 getSecondCard(), getValidMonth(0), plusYears(1), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
+        String actual = DataBase.getStatusCredit();
         creditPage.invalidPaymentCreditCard();
-        String actual = getCreditPaymentStatus();
         assertEquals("DECLINED", actual);
     }
 
@@ -78,8 +77,8 @@ public class CreditCardTests {
                 getSecondCard(), getCurrentMonth(), getCurrentYear(), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
-        creditPage.invalidPaymentCreditCard();
         String actual = DataBase.getStatusCredit();
+        creditPage.invalidPaymentCreditCard();
         assertEquals("DECLINED", actual);
     }
 
@@ -90,7 +89,7 @@ public class CreditCardTests {
                 invalidCard(14), getValidMonth(2), plusYears(1), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
-        creditPage.invalidPaymentCreditCard();
+        creditPage.checkInvalidFormat();
     }
 
     @Test
@@ -137,7 +136,7 @@ public class CreditCardTests {
     void shouldCheckPaymentWithExpiredCard() {
         var mainPage = new MainPage();
         CardInfo card = new CardInfo(
-                getFirstCard(), getValidMonth(10), plusYears(-1), getValidHolderName(), getValidCVC());
+                getFirstCard(), getValidMonth(-1), plusYears(-1), getValidHolderName(), getValidCVC());
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.checkCardExpired();
@@ -304,5 +303,14 @@ public class CreditCardTests {
         var creditPage = mainPage.creditPage();
         creditPage.getCardFieldsFilled(card);
         creditPage.checkAllFieldsAreRequired();
+    }
+    @Test
+    void shouldCheckInvalidCVCFormat() {
+        var mainPage = new MainPage();
+        CardInfo card = new CardInfo(
+                getFirstCard(), getValidMonth(2), plusYears(3), getValidHolderName(), getInvalidCVC());
+        var creditPage = mainPage.creditPage();
+        creditPage.getCardFieldsFilled(card);
+        creditPage.checkInvalidFormat();
     }
 }
