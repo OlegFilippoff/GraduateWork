@@ -30,7 +30,7 @@ public class CreditCardTests {
 
     @BeforeEach
     public void setUp() {
-        Configuration.headless = false;
+        Configuration.headless = true;
         open(url);
     }
 
